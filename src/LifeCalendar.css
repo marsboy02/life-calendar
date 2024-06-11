@@ -1,0 +1,25 @@
+/* src/LifeCalendar.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(52, 10px);
+    gap: 2px;
+    justify-content: center;
+}
+
+.week {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+}
+
+.week.lived {
+    background-color: black;
+}
