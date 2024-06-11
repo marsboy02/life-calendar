@@ -1,7 +1,7 @@
 // src/LifeCalendar.js
 
 import React from 'react';
-import { differenceInWeeks, format } from 'date-fns';
+import { differenceInWeeks } from 'date-fns';
 import './LifeCalendar.css';
 
 const LifeCalendar = ({ birthdate }) => {
@@ -13,7 +13,7 @@ const LifeCalendar = ({ birthdate }) => {
 
     return (
         <div className="container">
-            <h2>65 Year Human Life in Weeks</h2>
+            <h2>Weeks of My Life</h2>
             <div className="calendar">
                 {weeksArray.map((lived, index) => (
                     <div key={index} className={`week ${lived ? 'lived' : ''}`}></div>

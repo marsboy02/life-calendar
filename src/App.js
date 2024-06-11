@@ -15,6 +15,7 @@ function App() {
                     type="date"
                     value={birthdate}
                     onChange={(e) => setBirthdate(e.target.value)}
+                    style={{ padding: '0.5em', fontSize: '1em', marginBottom: '20px' }}
                 />
                 <LifeCalendar birthdate={birthdate} />
             </header>

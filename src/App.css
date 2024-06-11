@@ -1,12 +1,11 @@
-/* src/App.css */
-
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100dvh;
   flex-direction: column;
   text-align: center;
+  padding: 0 20px;
 }
 
 .App-header {

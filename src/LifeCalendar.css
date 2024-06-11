@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    padding: 0 10px;
 }
 
 .calendar {
@@ -22,4 +23,21 @@
 
 .week.lived {
     background-color: black;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .calendar {
+        grid-template-columns: repeat(26, 8px); /* More rows, fewer columns */
+        gap: 1px;
+    }
+
+    .week {
+        width: 8px;
+        height: 8px;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
 }
