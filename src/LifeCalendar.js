@@ -7,7 +7,7 @@ import './LifeCalendar.css';
 const LifeCalendar = ({ birthdate }) => {
     const currentDate = new Date();
     const birthDate = new Date(birthdate);
-    const totalWeeks = 65 * 52; // Assuming 90 years lifespan
+    const totalWeeks = 90 * 52; // Assuming 90 years lifespan
     const livedWeeks = differenceInWeeks(currentDate, birthDate);
     const weeksArray = Array.from({ length: totalWeeks }, (_, index) => index < livedWeeks);
 
