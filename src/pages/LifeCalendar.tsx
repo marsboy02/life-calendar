@@ -2,7 +2,11 @@ import React from 'react';
 import { differenceInWeeks } from 'date-fns';
 import '../style/LifeCalendar.css';
 
-const LifeCalendar = ({ birthdate }) => {
+interface LifeCalendarProps {
+    birthdate: string;
+}
+
+const LifeCalendar: React.FC<LifeCalendarProps> = ({ birthdate }) => {
     const currentDate = new Date();
     const birthDate = new Date(birthdate);
     const totalWeeks = 90 * 52;
